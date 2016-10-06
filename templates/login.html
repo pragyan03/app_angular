@@ -1,0 +1,29 @@
+<div class="container" ng-controller="LoginController">
+    <div class="jumbotron">
+        <h1 id="header" class="text-center">Login Form</h1>
+    </div>
+    <div class="row" ng-init="init();">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <form name="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" ng-model="user.email" class="form-control" name="email" required/>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" ng-model="user.password" class="form-control" name="password" ng-required />
+                </div>
+                <div class="form-group">
+                    <input type="button"  ng-click="login(user);" class="btn btn-danger form-control" value="Login">
+                </div>
+                <div class="form-group" style="text-align: center;">
+                    <p>Do not have an account? <a href="#signup" class="btn btn-primary btn-xs">SignUp</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+</div>
